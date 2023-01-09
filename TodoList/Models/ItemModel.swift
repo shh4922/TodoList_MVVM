@@ -10,7 +10,7 @@ import Foundation
 
 //Immutable Struct
 
-struct ItemModel : Identifiable{
+struct ItemModel : Identifiable, Codable{
     let id : String
     let title : String
     let isCompleted : Bool
@@ -25,6 +25,9 @@ struct ItemModel : Identifiable{
     func updateCompletion() -> ItemModel{
         return ItemModel(id: id, title: title, isCompleted: !isCompleted)
     }
+    
+    
+    
 }
 
 

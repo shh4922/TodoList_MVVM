@@ -14,7 +14,7 @@ struct AddView: View {
     @State var textFieldText: String = ""
     
     @State var alterTitle : String  = ""
-    @State var showAlert : Bool = false
+    @State var showAlert : Bool = false   
     
     
     var body: some View {
@@ -23,7 +23,7 @@ struct AddView: View {
                 TextField("Type someThing",text: $textFieldText)
                     .padding(.horizontal)
                     .frame(height : 50)
-                    .background(Color(.gray))
+                    .background(Color.gray)
                     .cornerRadius(10)
                 
                 Button(action: saveButtonPressed
