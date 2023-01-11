@@ -13,11 +13,15 @@ struct ListRowView: View {
     
     var body: some View {
         HStack{
+            // 아이탬을 받아왔을때 했는지 안했는지의 여부를 확인후, 빈원을 만들지, check된 원을 만들지
             Image(systemName: item.isCompleted ? "checkmark.circle" : "circle")
                 .foregroundColor(item.isCompleted ? .green : .red)
+            
+            //할일이 들어가는곳, 넘겨받은 item의 title을 그려주는 역할
             Text(item.title)  
             Spacer()
         }
+        
         .font(.title2)
         .padding(.vertical, 8)
     }

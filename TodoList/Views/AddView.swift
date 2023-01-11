@@ -41,7 +41,7 @@ struct AddView: View {
                 })
             }
             .padding(14)
-        }
+        } //
         .navigationTitle("Add an Item!!")
         .alert(isPresented: $showAlert, content: getAlert)
         
